@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contacts.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Siyanda Website</title>
+</head>
+<body>
+    <div class="one">
+        <div class="first_box">
+            <div class="navigation-bar">
+                <div class="nav-links" id="nav-links">
+                    <i class="fa fa-close" onclick="closeMenu()"></i>
+                    <ul>
+                        <a href="index.html"><li>HOME</li></a>
+                        <a href="about.html"><li>ABOUT</li></a>
+                        <a href="skills.html"><li>SKILLS</li></a>
+                        <a href="portfolio.html"><li>PORTFOLIO</li></a>
+                    </ul>
+                </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+            </div>
+        </div>
+        <div class="fifth_box">
+            <div class="banner-title">
+                <h1 style="font-size: xx-large;">CONTACT</h1>
+                <br>
+                <p style="font-size: 10px;">
+                <div class="FORM" style="color: lime;">
+                
+                    <p align="center">
+                    <label for="fname">First Name</label>
+                    <br>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    <br>
+                    <br>
+            
+                    <label for="lname">Last Name</label>
+                    <br>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    <br>
+                    <br>
+            
+                    <label for="email">Email Address</label>
+                    <br>
+                    <input type="text" id="email" name="email_adress" placeholder="Your email address..">
+                    <br>
+                    <br>
+                    <label for="country">Country</label>
+                    <br>
+                    <select id="country" name="country">
+                    <option value="South_Africa">South_Africa</option>
+                    <option value="Ghana">Ghana</option>
+                    <option value="Zimbabwe">Zimbabwe</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label for="subject">Subject</label>
+                    <br>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:70px;width: 140px;"></textarea>
+                    <br>
+                    <br>
+                    <input type="submit" value="Submit">
+                    </p>
+                </div>
+                </p>
+            </div>
+        </div>
+        <div class="second_box"></div>
+            <div class="vertical-bar">
+                <div><img src="siya.jpeg" style="width: 100px;height: 225px;"></div>
+                <div class="social-icon">
+                    <a href="https://www.facebook.com/sia.jeanclaude" style="text-decoration:none; color: black;"><i class="fa fa-facebook"></i></i></a>
+                <a href="https://twitter.com/siandierh_j" style="text-decoration:none; color: black;"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.instagram.com/siandierh" style="text-decoration:none; color: black;"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/siyanda-jean-claude-dindi-190800109/" style="text-decoration:none; color: black;"><i class="fa fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="sixth_box">
+            <div class="notifications">
+                <div class="contents">
+                    <small>Do not hesitate to reach out.</small>
+                </div>
+                <div class="notification-img">
+                    <img src="thing.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var show = document.getElementById("nav-links")
+        function showMenu(){
+            show.style.right = "0";
+
+        }
+        function closeMenu(){
+            show.style.right = "-200px";
+            
+        }
+    </script>
+</body>
+</html>
