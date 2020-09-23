@@ -1,0 +1,100 @@
+html {
+  font-family: "Lucida Sans", sans-serif;
+  background-color: black;
+  margin: 10px;
+}
+
+.header1 {
+    background-color: black;
+    color: white;
+    padding: 15px;
+}
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu button {
+  width: 150px;
+  padding: 20px;
+  margin-bottom: 4px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  
+} 
+
+div{
+    color: white;
+}
+
+h2{
+    text-align: center;
+    font-size: xx-large;
+}
+.menu button:hover {
+    background-image: linear-gradient(rgba(0,0,0,0.8),
+    rgba(0,0,0,0.6)), url(red.gif);
+  color: white;
+  color: red;
+  font-style: bold;
+}
+
+.parent{
+    display: grid;
+    grid-template-columns: 150px 3fr;
+    grid-template-rows: 1fr 2fr 2fr;
+    grid-gap: 5px;
+    grid-template-areas: "nav displ"
+                         "nav displ"
+                         "nav displ";
+
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+    position: relative;
+                         
+}
+
+.two{
+    grid-area: nav;
+}
+
+table{
+  width:100%;
+}
+
+table img{
+  width: 180px; height: 150px
+}
+
+.seven{
+    grid-area: displ ;
+    color: white;
+    background-size: 760px 610px;
+}
+@media only screen and (max-width: 375px){
+    .parent{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 2fr;
+        grid-gap: 5px;
+        grid-template-areas: "nav"
+                             "nav"
+                             "nav";
+    }
+
+    table, thead, tbody, th, td, tr { 
+      display: block; 
+    }
+    
+    table{
+      width:50%;
+      border-collapse: collapse;
+    }
+    table img{
+      width: 50px; height: 50px
+    }
+}
